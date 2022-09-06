@@ -72,13 +72,15 @@ window.addEventListener('scroll',()=>{
   sections.forEach(section=>{
     const sectionTop=section.offsetTop;
     const sectionHeight=section.clientHeight;
-    // console.log(pageYOffset);
-    // console.log(sectionTop);
-    if(pageYOffset>=(sectionTop-sectionHeight/3)){
+    
+    if(pageYOffset>=((sectionTop-300)-sectionHeight/3)){
       current=section.getAttribute('id');
+      console.log(pageYOffset);
+  console.log(sectionTop);
     }
   })
   console.log(current);
+  
   navitem.forEach(a=>{
     a.classList.remove('active');
     if(a.classList.contains(current)){
