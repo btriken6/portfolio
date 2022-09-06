@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+	<nav>
+		<div id="navbar">
+	  		<a href="#" id="logo">My Portfolio</a>
+			  <div id="navbar-right">
+			    <a class="home" href="#home">Home</a>
+			    <a class="contact" href="#contact">Contact</a>
+			    <a class="about" href="#about">About</a>
+			  </div>
+		</div>
+	</nav>
+	<section id="home" class="details">
+		<div class="image-section">
+			<img src="image/profile.jpg" alt="Profile photo">
+			<h1>Triken Barman</h1>
+			<hr>
+			<p>A Full Stack Developer!</p>
+		</div>
+		<div class="video-container">
+			<video autoplay muted loop id="myVideo">
+  			<source src="video.mp4" type="video/mp4"></video>
+		</div>
+	</section>
+	<section class="portfolio">
+		<div class="parallax">
+			<h1>Portfolio - Skills</h1>
+			<hr style="position: relative;top: 60px;border: 2px dotted black;">
+			<img id="myImg01" src="image/mongo.png">
+			<img id="myImg02" src="image/express.jpeg"><br><br>
+			<img id="myImg03" src="image/react.png">
+			<img id="myImg04" src="image/node.jpeg">
+			<div id="myModal" class="modal">
+				  <span class="close">&times;</span>
+				  <img class="modal-content" id="img01">
+			</div>
+		</div>
+	</section>
+	<section class="carousel">
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+			  <img src="image/mern1.webp" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+			  <img src="image/mern2.png" style="width:100%">
+			</div>
+
+
+		<a class="prev" onclick="plusSlides(-1)">❮</a>
+		<a class="next" onclick="plusSlides(1)">❯</a>
+
+		</div>
+	</section>
+	<section id="contact" class="contact-sec">
+		<div >
+			<h1>Contact</h1><hr>
+		</div>
+		
+	</section>
+	<section id="about">
+		<h1>Languages</h1><hr>
+		<div class="use-lang">
+			<div>
+				<img src="image/html.png">
+			</div>
+			<div>
+				<img src="image/css.png">
+			</div>
+			<div>
+				<img src="image/js.webp">
+			</div>
+		</div>
+	</section>
+		
+	
+	<footer>
+		<div id="footer">
+  			<h1>Footer</h1><hr style="color:;">
+  			<i class="fa-brands fa-facebook fa-2xl" style="color: blue; "></i>
+  			<i class="fa-sharp fa-solid fa-envelope fa-2xl" style="color: white;"></i>
+  			<i class="fa-brands fa-instagram fa-2xl" style="color: red;"></i>
+
+		</div>
+	</footer>
+	</section>
+
+	<script src="index.js"></script>
+	<script src="https://kit.fontawesome.com/6b2d191984.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+

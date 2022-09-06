@@ -1,0 +1,308 @@
+/** {box-sizing: border-box;}*/
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #6FEDD6;
+  padding: 40px 10px;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+#navbar a {
+  float: left;
+  color: #293462;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 20px;
+}
+
+#navbar #logo {
+  padding-left: 8%;
+  font-size: 35px;
+
+  transition: 0.4s;
+}
+
+
+#navbar-right {
+  float: right;
+  padding-right: 8%;
+}
+#navbar-right a{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#footer {
+   
+   /*width: 100%;*/
+   background-color:#319DA0 ;
+   color: black;
+   text-align: center;
+   font-size: 15px; 
+   height: 200px;
+}
+section.details{
+  position: relative;
+  width: 100%;
+  height: 680px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: whitesmoke;
+}
+section.details img{
+  height: 350px;
+  position: relative;
+  top: 80px;
+  border-radius: 50%;
+
+}
+section.details h1{
+  position: relative;
+  top: 90px;
+  text-align: center;
+  font-size: 30px;
+}
+section.details p{
+  position: relative;
+  top: 60px;
+  font-size: 30px;
+}
+section.details hr{
+  position: relative;
+  top: 80px;
+  width: 20%;
+  border: 2px dotted white;
+  border-radius: 2px;
+}
+.portfolio{
+  text-align: center;
+}
+.parallax {
+   /*The image used */
+  background-image: url('image/parallax1.jpg');
+
+   /*Full height */
+  height: 620px; 
+  width: 100%;
+
+   /*Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.video-container{
+  position: absolute;
+  top: 81px;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+.portfolio h1{
+  color: whitesmoke;
+  margin: 0;
+  font-size: 30px;
+  position: relative;
+  top: 40px;
+  color: #16213E;
+}
+hr{
+  position: relative;
+  top: 80px;
+  width: 5%;
+  border: 2px dotted white;
+  border-radius: 2px;
+}
+.portfolio img{
+  position: relative;
+  top: 60px;
+  cursor: pointer;
+  padding: 40px;
+  height: 150px;
+  transition: transform .2s;
+}
+.portfolio img:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+section.contact-sec{
+  height: 550px;
+  background-color: #319DA0;
+  text-align: center;
+}
+section.contact-sec hr{
+  position: relative;
+  top: 40px;
+  width: 3%;
+  border: 2px dotted black;
+  border-radius: 2px;
+}
+section.contact-sec h1{
+  margin: 0;
+  position: relative;
+  top: 40px;
+  font-size: 30px;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 250px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 300px;
+}/* The Close Button */
+.close {
+  position: absolute;
+  top: 125px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+i{
+  padding: 15px;
+}
+footer h1{
+  margin-top: 0;
+  padding-top: 40px;
+}
+footer hr{
+  width: 3%;
+  border: 2px dotted black;
+  border-radius: 2px;
+}
+.slideshow-container img{
+  width: 100%;
+  height: 530px;
+
+}
+.carousel{
+  background-color: #B9FFF8;
+}
+#about{
+  text-align: center;
+  background-color: #B9FFF8;
+  height: 400px;
+  /*display: flex;
+  align-items: center;
+  justify-content: center;*/
+ }
+ .use-lang{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .use-lang img{
+  position: relative;
+  top: 70px;
+  width: 7rem;
+  padding-left: 12rem;
+  padding-right: 12rem;
+ }
+ #about h1{
+  margin: 0;
+  position: relative;
+  top: 40px;
+  font-size: 30px;
+ }
+#about hr{
+  position: relative;
+  top: 50px;
+  width: 3%;
+  border: 2px dotted black;
+  border-radius: 2px;
+}
+nav #navbar #navbar-right a.active{
+  background-color: #1C6758;
+  transition: 0.3 ease background-color;
+}
+nav #navbar #navbar-right .active{
+  color: white;
+}
