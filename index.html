@@ -13,7 +13,7 @@
 	  		<a href="#" id="logo">My Portfolio</a>
 			  <div id="navbar-right">
 			    <a class="home" href="#home">Home</a>
-			    <a class="contact" href="#contact">Contact</a>
+			    <a class="contact" href="#contact">Connect</a>
 			    <a class="about" href="#about">About</a>
 			  </div>
 		</div>
@@ -34,10 +34,10 @@
 		<div class="parallax">
 			<h1>Portfolio - Skills</h1>
 			<hr style="position: relative;top: 60px;border: 2px dotted black;">
-			<img id="myImg01" src="image/mongo.png">
-			<img id="myImg02" src="image/express.jpeg"><br><br>
-			<img id="myImg03" src="image/react.png">
-			<img id="myImg04" src="image/node.jpeg">
+			<img id="myImg01" src="image/jss.png">
+			<img id="myImg02" src="image/react.png"><br><br>
+			<img id="myImg03" src="image/mysql.jpg">
+			<img id="myImg04" src="image/php.jpg">
 			<div id="myModal" class="modal">
 				  <span class="close">&times;</span>
 				  <img class="modal-content" id="img01">
@@ -63,12 +63,19 @@
 	</section>
 	<section id="contact" class="contact-sec">
 		<div >
-			<h1>Contact</h1><hr>
+			<h1>Connect</h1><hr>
 		</div>
-		
+		<div class="wrapper">
+			<form class="form">
+				<input type="text" class="name formEntry" placeholder="Name" />
+				<input type="text" class="email formEntry" placeholder="Email" />
+				<textarea class="message formEntry" placeholder="Message"></textarea>
+				<button class="submit formEntry" onclick="thanks()">Submit</button>
+			</form>
+		</div>
 	</section>
 	<section id="about">
-		<h1>Languages</h1><hr>
+		<h1>Languages used to make this Site</h1><hr>
 		<div class="use-lang">
 			<div>
 				<img src="image/html.png">
@@ -85,7 +92,7 @@
 	
 	<footer>
 		<div id="footer">
-  			<h1>Footer</h1><hr style="color:;">
+  			<h1>Social Media</h1><hr>
   			<i class="fa-brands fa-facebook fa-2xl" style="color: blue; "></i>
   			<i class="fa-sharp fa-solid fa-envelope fa-2xl" style="color: white;"></i>
   			<i class="fa-brands fa-instagram fa-2xl" style="color: red;"></i>
